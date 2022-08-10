@@ -23,7 +23,7 @@ Optional query parameters:
 
 ::: tip Before you continue
 
-Make sure you understand [how to address IPFS on the web](../../how-to/address-ipfs-on-web/), and what are differences between [Path](../../how-to/address-ipfs-on-web/#path-gateway) and [Subdomain Gateways](../how-to/address-ipfs-on-web/#subdomain-gateway).
+Make sure you understand [how to address IPFS on the web](../../how-to/address-ipfs-on-web/), and what are differences between [Path](../../how-to/address-ipfs-on-web/#path-gateway) and [Subdomain Gateways](../../how-to/address-ipfs-on-web/#subdomain-gateway).
 
 :::
 
