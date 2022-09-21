@@ -1,6 +1,5 @@
 ---
 title: Host a Git-style repo
-legacyUrl: https://docs.ipfs.io/guides/examples/git/
 description: Learn how to serve a static Git repository worldwide using IPFS, the InterPlanetary File System.
 ---
 
@@ -28,9 +27,9 @@ git update-server-info
 Optionally, you can unpack all of Git's objects:
 
 ```bash
-cp objects/pack/*.pack .
-git unpack-objects < ./*.pack
-rm ./*.pack
+mv objects/pack/*.pack .
+git unpack-objects < *.pack
+rm -f *.pack objects/pack/*
 ```
 
 Doing this breaks up Git's large packfile into all of its individual objects. This will allow IPFS to deduplicate objects if you add multiple versions of this Git repository.

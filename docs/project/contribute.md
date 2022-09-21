@@ -14,7 +14,7 @@ to start contributing code.
 
 The biggest and most active repositories we have today are:
 
-- [https://github.com/ipfs/go-ipfs](https://github.com/ipfs/go-ipfs)
+- [https://github.com/ipfs/kubo](https://github.com/ipfs/kubo) (go-ipfs)
 - [https://github.com/ipfs/js-ipfs](https://github.com/ipfs/js-ipfs)
 - [https://github.com/libp2p/go-libp2p](https://github.com/libp2p/go-libp2p)
 - [https://github.com/libp2p/js-libp2p](https://github.com/libp2p/js-libp2p)
@@ -37,8 +37,6 @@ We do most support via the forum we have at [https://discuss.ipfs.io/](https://d
 ## Testing
 
 We’re continuously improving IPFS every day, but mistakes can happen and we could release something that doesn’t work as well as it should — or simply doesn't work at all! If you like to dig into edge-cases or write testing scenarios, wrangling our testing infrastructure could be the job for you.
-
-We work on continuous-integration tools at [https://github.com/ipfs/jenkins](https://github.com/ipfs/jenkins) and plan larger-scale tests at [https://github.com/ipfs/kubernetes-ipfs](https://github.com/ipfs/kubernetes-ipfs).
 
 ## UX and visual design
 

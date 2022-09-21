@@ -1,6 +1,5 @@
 ---
 title: Concepts
-legacyUrl: https://docs.ipfs.io/guides/concepts/
 description: Get started on understanding the key ingredients in the decentralized web and how IPFS works.
 ---
 
@@ -24,13 +23,16 @@ Want the basics in theater mode? Check out these helpful videos for an overview 
 
 - [IPFS: A Whiteboard Overview](https://www.youtube.com/watch?v=J-drqD2UebM)
 
+Check out ResNetLab on Tour for complete tutorials on IPFS and the Web 3.0 stack:
+
+- [ResNetLab on Tour 2021](https://research.protocol.ai/tutorials/resnetlab-on-tour/)
+
 ## IPFS 101
 
 Get the basic concepts of IPFS in one place, including:
 
 - [What is IPFS?](what-is-ipfs.md)
 - [How IPFS works](how-ipfs-works.md)
-- [IPFS primer](https://dweb-primer.ipfs.io/)
 - [Glossary](glossary.md)
 - [FAQ](faq.md)
 
@@ -77,8 +79,6 @@ IPFS aims to be the future of the internet, but it still needs to play well with
 ## Further reading
 
 Want a more in-depth look into the decentralized web? Here are a few papers that are useful for understanding IPFS, whether it be understanding the IPFS spec itself or the background for the web, protocols, hashing, and so on. [Read the papers →](further-reading/academic-papers.md)
-
-You may also be interested in the community-made [IPFS Primer →](https://dweb-primer.ipfs.io/)
 
 ## Don't see what you're looking for?
 

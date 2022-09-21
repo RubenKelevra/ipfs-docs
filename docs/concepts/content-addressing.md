@@ -1,6 +1,5 @@
 ---
 title: Content addressing
-legacyUrl: https://docs.ipfs.io/guides/concepts/cid/
 description: Learn about how content addressing works and how content identifiers, or CIDs, play a crucial role in IPFS.
 ---
 
@@ -71,7 +70,7 @@ bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi
 JavaScript users can also leverage the `toV1()` method provided by the [`cids`](https://www.npmjs.com/package/cids) library:
 ```js
 const CID = require('cids')
-new CID('QmbWqxBEKC3P8tqsKc98xmWNzrzDtRLMiMPL8wBuTGsMnR').toV1().toString()
+new CID('QmbWqxBEKC3P8tqsKc98xmWNzrzDtRLMiMPL8wBuTGsMnR').toV1().toString('base32')
 // → bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi
 ```
 
@@ -143,3 +142,4 @@ Check out these links for more information on CIDs and how they work:
 
 - [Core Course: How IPFS Deals With Files](https://www.youtube.com/watch?v=Z5zNPwMDYGg)
 - [Files and IPFS Companion](https://www.youtube.com/watch?v=OCv5PvLnk-Y)
+- [ResNetLab on Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/)

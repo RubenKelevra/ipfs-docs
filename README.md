@@ -1,11 +1,11 @@
 ![IPFS documentation logo.](ipfs-docs-header.png)
 [![Build status icon.](https://img.shields.io/circleci/project/github/ipfs/ipfs-docs/master.svg?style=flat-square)](https://circleci.com/gh/ipfs/ipfs-docs)
 [![Made by icon.](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](https://protocol.ai/)
-[![Project icon.](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
+[![Project icon.](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.tech/)
 
 This repository organizes overall documentation issues across the IPFS project.
 
-**If you'd just like to read the IPFS docs, we recommend the website version of the info contained in this repo! https://docs.ipfs.io**
+**If you'd just like to read the IPFS docs, we recommend the website version of the info contained in this repo! https://docs.ipfs.tech**
 
 ## Get involved
 
@@ -27,7 +27,7 @@ Everyone has an opinion when it comes to docs, and **that's a good thing**! Havi
 
 #### Pull requests welcome
 
-Feel free to submit pull requests with any changes you'd like to see! If you're simply changing a typo or editing out a styling bug, you can add `ciskip` to the title of your pull request to stop Filecorgi from running.
+Feel free to submit pull requests with any changes you'd like to see! If you're simply changing a typo or editing out a styling bug, you can add `ciskip` to the title of your pull request to stop Filecorgi from running. Once merged, the website is updated automatically within 5-10 minutes.
 
 ## Project set up
 
@@ -55,6 +55,44 @@ If you want to build this site locally, run the following:
 1. Open [localhost:8080](http://localhost:8080) in your browser.
 1. Close the local server with `CTRL` + `c`.
 1. To restart the local server, run `npm start` from within the `ipfs-docs` folder.
+
+## Troubleshooting
+
+If you're having trouble setting up the site locally, check here for solutions to some common problems.
+
+### Digital envelope routines initialization error
+
+The following error message may display when using Node.js version 18.0.0 when attempting to locally deploy this project for the first time:
+
+   ```shell
+   opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+   library: 'digital envelope routines',
+   reason: 'unsupported',
+   code: 'ERR_OSSL_EVP_UNSUPPORTED'
+   ```
+
+To solve this error, perform the following steps:
+
+1. Open a terminal.
+2. Navigate into the `ipfs-docs` folder:
+   
+   ```bash
+   cd ipfs-docs
+   ```
+
+3. Run the following command:
+
+   ```shell
+    export NODE_OPTIONS=--openssl-legacy-provider
+   ```
+
+4. Run `npm start`.
+
+   ```bash
+   npm start
+   ```
+
+You can now return to the [Project set-up](#project-set-up) section above and continue on with the steps. You can also check [this issue in the Webpack GitHub repository](https://github.com/webpack/webpack/issues/14532) for more information about this error.
 
 ## Core members
 
